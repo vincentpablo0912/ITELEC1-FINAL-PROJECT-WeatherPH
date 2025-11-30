@@ -7,6 +7,19 @@
     android:background="@drawable/gradient_background"
     tools:context=".ui.MainActivity">
 
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/profile"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleText"
+        app:tint="@android:color/white" />
+
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -26,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Exit"
+        android:contentDescription="@string/exit"
         android:src="@drawable/ic_exit"
         app:layout_constraintBottom_toBottomOf="@id/titleText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -273,7 +286,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
-                        android:orientation="horizontal">
+                        android.orientation="horizontal">
 
                         <TextView
                             android:layout_width="0dp"
@@ -288,7 +301,7 @@
                             android:id="@+id/precipitationValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="0%"
+                            android:text="@string/precipitation_default"
                             android:textColor="@android:color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -313,7 +326,7 @@
                             android:id="@+id/pressureValue"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1012 hPa"
+                            android:text="@string/pressure_default"
                             android:textColor="@android:color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />

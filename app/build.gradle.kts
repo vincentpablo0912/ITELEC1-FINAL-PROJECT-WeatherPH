@@ -36,7 +36,6 @@ android {
 dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation("androidx.work:work-runtime:2.9.0")

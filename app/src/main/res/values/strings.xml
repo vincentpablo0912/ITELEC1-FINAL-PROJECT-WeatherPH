@@ -26,5 +26,8 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="refresh">Refresh</string>
-
+    <string name="profile">Profile</string>
+    <string name="exit">Exit</string>
+    <string name="precipitation_default">0%</string>
+    <string name="pressure_default">1012 hPa</string>
 </resources>
